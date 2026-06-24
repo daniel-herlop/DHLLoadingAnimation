@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		D2FCD15F50BAAFEC028181E0 /* libPods-DHLLoadingAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F74C99E77961D9FD89E5F68C /* libPods-DHLLoadingAnimation.a */; };
+		D7C9800F2FEBD64C00CD5148 /* lottie.json in Resources */ = {isa = PBXBuildFile; fileRef = D7C9800C2FEBD64C00CD5148 /* lottie.json */; };
 		D7ED8E6C2FEAA3E3008D1543 /* DHLLoadingAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7ED8E692FEAA3E3008D1543 /* DHLLoadingAnimation.swift */; };
 		D7ED8E6D2FEAA3E3008D1543 /* DHLLoadingAnimation.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7ED8E6A2FEAA3E3008D1543 /* DHLLoadingAnimation.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CB678E9B12BB73BDDDA29667 /* Pods-DHLLoadingAnimation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DHLLoadingAnimation.debug.xcconfig"; path = "Target Support Files/Pods-DHLLoadingAnimation/Pods-DHLLoadingAnimation.debug.xcconfig"; sourceTree = "<group>"; };
+		D7C9800C2FEBD64C00CD5148 /* lottie.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = lottie.json; sourceTree = "<group>"; };
 		D7ED8E5B2FEAA37F008D1543 /* DHLLoadingAnimation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DHLLoadingAnimation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7ED8E692FEAA3E3008D1543 /* DHLLoadingAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHLLoadingAnimation.swift; sourceTree = "<group>"; };
 		D7ED8E6A2FEAA3E3008D1543 /* DHLLoadingAnimation.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DHLLoadingAnimation.xib; sourceTree = "<group>"; };
@@ -50,6 +52,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D7C9800A2FEBD62000CD5148 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D7C9800B2FEBD63000CD5148 /* lottie */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D7C9800B2FEBD63000CD5148 /* lottie */ = {
+			isa = PBXGroup;
+			children = (
+				D7C9800C2FEBD64C00CD5148 /* lottie.json */,
+			);
+			path = lottie;
+			sourceTree = "<group>";
+		};
 		D7ED8E512FEAA37F008D1543 = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				D7ED8E682FEAA38F008D1543 /* Modules */,
+				D7C9800A2FEBD62000CD5148 /* Resources */,
 			);
 			path = DHLLoadingAnimation;
 			sourceTree = "<group>";
@@ -115,6 +134,7 @@
 				D7ED8E572FEAA37F008D1543 /* Sources */,
 				D7ED8E582FEAA37F008D1543 /* Frameworks */,
 				D7ED8E592FEAA37F008D1543 /* Resources */,
+				D43C5277CC77585C8E92719F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -165,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7ED8E6D2FEAA3E3008D1543 /* DHLLoadingAnimation.xib in Resources */,
+				D7C9800F2FEBD64C00CD5148 /* lottie.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,6 +212,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D43C5277CC77585C8E92719F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DHLLoadingAnimation/Pods-DHLLoadingAnimation-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DHLLoadingAnimation/Pods-DHLLoadingAnimation-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DHLLoadingAnimation/Pods-DHLLoadingAnimation-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -343,6 +385,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -379,6 +422,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";

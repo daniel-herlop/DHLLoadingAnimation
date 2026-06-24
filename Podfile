@@ -4,7 +4,7 @@ target 'DHLLoadingAnimation' do
   #use_frameworks!
 
   # Pods for DHLLoadingAnimation
-
+  pod 'lottie-ios'
 
 end
 

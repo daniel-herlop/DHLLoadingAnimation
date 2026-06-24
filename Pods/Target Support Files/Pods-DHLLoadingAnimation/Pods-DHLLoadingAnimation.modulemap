@@ -1,0 +1,6 @@
+module Pods_DHLLoadingAnimation {
+  umbrella header "Pods-DHLLoadingAnimation-umbrella.h"
+
+  export *
+  module * { export * }
+}

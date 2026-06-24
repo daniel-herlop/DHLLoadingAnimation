@@ -6,7 +6,7 @@ s.name = "DHLLoadingAnimation"
 s.summary = "Animacion de cargando"
 s.requires_arc = true
 
-s.version = "0.1.0"
+s.version = "1.0.0"
 
 s.license = { :type => "MIT", :file => "LICENSE" }
 
@@ -18,10 +18,11 @@ s.source = { :git => "https://github.com/daniel-herlop/DHLLoadingAnimation.git",
              :tag => "#{s.version}" }
 
 s.framework = "UIKit"
+s.dependency 'lottie-ios'
 
 s.source_files = "DHLLoadingAnimation/**/*.{swift}"
 
-s.resources = "DHLLoadingAnimation/**/*.{png,jpeg,jpg,storyboard,xib,xcassets,strings}"
+s.resources = "DHLLoadingAnimation/**/*.{png,jpeg,jpg,storyboard,xib,xcassets,strings,json}"
 
 s.swift_version = "5.0"
 
